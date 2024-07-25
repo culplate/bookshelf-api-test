@@ -1,4 +1,10 @@
 import express from "express";
+import {
+  createBook,
+  deleteBook,
+  getAllBooks,
+  getOneBook,
+} from "../controllers/booksControllers.js";
 
 const booksRouter = express.Router();
 
