@@ -1,4 +1,4 @@
-import { books } from "../app.js";
+import { books } from "../db/booksDb.js";
 import { createBookSchema } from "../schemas/bookSchemas.js";
 
 export function getAllBooks(req, res, next) {

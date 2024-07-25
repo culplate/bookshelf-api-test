@@ -10,12 +10,10 @@ const PORT = process.env.PORT || 8080;
 app.use(morgan("tiny"));
 app.use(cors());
 
-export const books = [];
-
 // Root route
 app.use("/", routes);
 
-// Обробка помилки неіснуючого роуту
+// Обробка запитів до неіснуючого роуту
 app.use((_, res) => {
   res.status(404).json({ message: "Route not found" });
 });
