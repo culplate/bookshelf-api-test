@@ -1,5 +1,5 @@
 import express from "express";
-import booksRouter from "./booksRoutes";
+import booksRouter from "./booksRoutes.js";
 
 const router = express.Router();
 const jsonParser = express.json();
