@@ -3,8 +3,8 @@ import Joi from "joi";
 export const createBookSchema = Joi.object({
   title: Joi.string().required().min(3).max(80).messages({
     "any.required": "title value is required",
-    "string.min": "Min. name length is 3 symbols",
-    "string.max": "Max. name length is 80 symbols",
+    "string.min": "Min. title length is 3 symbols",
+    "string.max": "Max. title length is 80 symbols",
   }),
   author: Joi.string().required().min(3).max(35).messages({
     "any.required": "author value is required",
